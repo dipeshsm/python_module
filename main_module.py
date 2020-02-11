@@ -1,11 +1,17 @@
-import Gaurav.py as gv
-import Deepam.py as da
-import #module3
+import Gaurav as gv
+#import #module2
+#import #module3
+import Deepam as da
 
-
-filename='~/Documents/wiki.txt'
+filename='/Users/dmehta1/Documents/wiki.txt'
+#file_object  = open('/Users/dmehta1/Documents/wiki.txt', 'r')
+#for i in file_object:
+    #print(i)
 file_object  = open('/Users/dmehta1/Documents/wiki.txt', 'r')
-for i in file_object:
-    print(i)
-    
-gv.MaxWordLen(filename)
+filecont=file_object.read()
+
+maxword=gv.MaxWordLen(filecont)
+print(maxword)
+
+wordcount=da.open_file(filename)
+print(wordcount)
