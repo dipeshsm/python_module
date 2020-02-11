@@ -1,6 +1,7 @@
 
 
 def MaxWordLen(filename):
+    longlist=[]
     words = filename.split()
     MaxLen = 0
     for i in words:
@@ -10,5 +11,5 @@ def MaxWordLen(filename):
         elif len(i) == MaxLen:
             longlist.append(i)
     for j in longlist:
-        print(j)
+        return j
 
